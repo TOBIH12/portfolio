@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+body {
+  background: #f0ecbd;
+  color: var(--foreground);
+  font-family: Outfit;
+  vcolor:rgb(235, 224, 74);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position-x: 150%;
+  }
+  40%, 100%{
+    background-position-x: -150%;
+  }
+}
+.btn-secondary{
+  background-image: linear-gradient(-60deg, #ffffff00 0%, #ffffff00 40%, #ffffff9f 40%, #ffffff00 60%, #ffffff00 60%, #ffffff00 100%);
+
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+
+  animation: shimmer 4s infinite;
+}
